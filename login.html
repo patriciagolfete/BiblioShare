@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - BiblioShare</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+
+    body{
+      font-family: 'Poppins', sans-serif;
+    }
+
+    h1, h2{
+      font-family: 'Merriweather', serif;
+    }
+
+    .login-container{
+      max-width: 450px;
+      margin: 50px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .login-container h2{
+      text-align: center;
+      margin-bottom: 25px;
+      color: #2e7d32;
+    }
+
+    .form-group{
+      margin-bottom: 18px;
+    }
+
+    .form-group label{
+      display: block;
+      margin-bottom: 6px;
+      font-weight: 600;
+    }
+
+    .form-group input{
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    .btn-login{
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 6px;
+      background-color: #2e7d32;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .btn-login:hover{
+      background-color: #1b5e20;
+    }
+
+    .cadastro-link{
+      text-align: center;
+      margin-top: 15px;
+      font-size: 14px;
+    }
+
+    .cadastro-link a{
+      color: #2e7d32;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .cadastro-link a:hover{
+      text-decoration: underline;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>📚 BiblioShare</h1>
+    <p>Compartilhe conhecimento, compartilhe livros</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Início</a>
+    <a href="#">Livros</a>
+    <a href="cadastro.html">Cadastro</a>
+    <a href="login.html">Login</a>
+  </nav>
+
+  <main class="login-container">
+
+    <h2>
+      <i class="fa-solid fa-right-to-bracket"></i>
+      Entrar
+    </h2>
+
+    <form>
+
+      <div class="form-group">
+        <label for="email">E-mail</label>
+
+        <input
+          type="email"
+          id="email"
+          placeholder="Digite seu e-mail"
+          required>
+      </div>
+
+      <div class="form-group">
+        <label for="senha">Senha</label>
+
+        <input
+          type="password"
+          id="senha"
+          placeholder="Digite sua senha"
+          required>
+      </div>
+
+      <button type="submit" class="btn-login">
+        Entrar
+      </button>
+
+    </form>
+
+    <div class="cadastro-link">
+      Não possui conta?
+      <a href="cadastro.html">Cadastre-se</a>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>Projeto acadêmico - BiblioShare © 2026</p>
+  </footer>
+
+</body>
+</html>
