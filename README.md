@@ -6,16 +6,16 @@ O **BiblioShare** é uma plataforma web desenvolvida com o objetivo de incentiva
 
 O projeto está alinhado com os Objetivos de Desenvolvimento Sustentável (ODS):
 
-* 📖 **ODS 4** – Educação de Qualidade
-* 🏙️ **ODS 11** – Cidades e Comunidades Sustentáveis
-* ♻️ **ODS 12** – Consumo Responsável
+* 📖 **ODS 4 – Educação de Qualidade**
+* 🏙️ **ODS 11 – Cidades e Comunidades Sustentáveis**
+* ♻️ **ODS 12 – Consumo Responsável**
 
 ---
 
 ## 👩‍💻 Integrantes do Grupo 6
 
 * Maria Vitória Mendes Storel
-* Patricia Lacerda Golfete
+* Patrícia Lacerda Golfete
 
 ---
 
@@ -23,9 +23,9 @@ O projeto está alinhado com os Objetivos de Desenvolvimento Sustentável (ODS):
 
 * Cadastro de usuários
 * Login no sistema
-* Cadastro de livros para troca/empréstimo
+* Cadastro de livros para troca e empréstimo
 * Busca de livros disponíveis
-* Sistema de compartilhamento entre usuários
+* Compartilhamento de livros entre usuários
 
 ---
 
@@ -34,6 +34,26 @@ O projeto está alinhado com os Objetivos de Desenvolvimento Sustentável (ODS):
 * HTML5
 * CSS3
 * JavaScript
+
+---
+
+## 📁 Estrutura do projeto
+
+```bash
+BiblioShare/
+│
+├── index.html
+├── cadastro.html
+├── login.html
+│
+├── css/
+│   └── style.css
+│
+├── assets/
+│   └── imagens
+│
+└── README.md
+```
 
 ---
 
@@ -47,11 +67,11 @@ Promover o acesso democrático à leitura, incentivando a reutilização de livr
 
 1. Clone o repositório:
 
-```
-git clone https://github.com/seu-usuario/biblioshare.git
+```bash
+git clone https://github.com/patriciagolfete/BiblioShare.git
 ```
 
-2. Abra o arquivo `index.html` no navegador
+2. Abra o arquivo `index.html` no navegador.
 
 ---
 
@@ -60,11 +80,21 @@ git clone https://github.com/seu-usuario/biblioshare.git
 * Sistema de avaliações de usuários
 * Chat entre usuários
 * Integração com banco de dados
-* Responsividade para mobile
+* Responsividade para dispositivos móveis
 
 ---
 
-## 📷 Preview (adicione imagens aqui depois)
+## 📷 Preview
+
+Adicione imagens do projeto aqui futuramente.
+
+---
+
+## 🌐 GitHub Pages
+
+Acesse o projeto online:
+
+https://patriciagolfete.github.io/BiblioShare/
 
 ---
 
