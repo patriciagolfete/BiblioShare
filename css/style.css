@@ -157,3 +157,22 @@ footer {
     height: 220px;
   }
 }
+.ods-container {
+  margin-top: 20px;
+
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.ods-container img {
+  width: 85px;
+  border-radius: 10px;
+
+  transition: transform 0.2s;
+}
+
+.ods-container img:hover {
+  transform: scale(1.05);
+}
