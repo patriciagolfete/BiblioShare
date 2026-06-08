@@ -1,6 +1,6 @@
 
 <p align="center">
-  <img src="img/logo-biblioshare.png" alt="Logo BiblioShare" width="320">
+  <img src="img/logo-biblioshare.png" alt="Logo BiblioShare" width="400">
 </p>
 
 <p align="center">
