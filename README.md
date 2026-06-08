@@ -10,10 +10,11 @@
 </p>
 
 ---
-
+<p align="center">
 ## 🌍 Sobre o projeto
 
 O **BiblioShare** é uma plataforma web desenvolvida com o objetivo de incentivar o acesso à leitura por meio do **compartilhamento de livros entre usuários**, permitindo **trocas e empréstimos**, promovendo educação, sustentabilidade e reutilização de recursos.
+</p>
 
 ## 🌍 Objetivos de Desenvolvimento Sustentável
 
