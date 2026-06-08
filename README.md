@@ -82,8 +82,8 @@ Estimula a reutilização de livros e reduz desperdícios.
 
 ## 👩‍💻 Integrantes do Grupo 6
 
-- [Maria Vitória Mendes Storel](https://m4riavit0ria.github.io/)
-- [Patrícia Lacerda Golfete](https://patriciagolfete.github.io/)
+- [Maria Vitória Mendes Storel](https:/github.com/m4riavit0ria)
+- [Patrícia Lacerda Golfete](https://github.com/patriciagolfete)
 
 ---
 
