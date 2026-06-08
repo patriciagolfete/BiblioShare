@@ -15,37 +15,59 @@
 
 O **BiblioShare** é uma plataforma web desenvolvida com o objetivo de incentivar o acesso à leitura por meio do **compartilhamento de livros entre usuários**, permitindo **trocas e empréstimos**, promovendo educação, sustentabilidade e reutilização de recursos.
 
+```md
 ## 🌍 Objetivos de Desenvolvimento Sustentável
 
 <div align="center">
 
 <table>
-  <tr>
-    <td align="center" width="250">
-      <img src="img/ods4.png" alt="ODS 4" width="120"><br>
-      <strong>ODS 4</strong><br>
-      Educação de Qualidade<br><br>
-      Amplia o acesso à leitura e ao conhecimento.
-    </td>
+<tr>
 
-    <td align="center" width="250">
-      <img src="img/ods11.png" alt="ODS 11" width="120"><br>
-      <strong>ODS 11</strong><br>
-      Cidades e Comunidades Sustentáveis<br><br>
-      Incentiva colaboração e fortalecimento comunitário.
-    </td>
+<td align="center" width="250">
 
-    <td align="center" width="250">
-      <img src="img/ods12.png" alt="ODS 12" width="120"><br>
-      <strong>ODS 12</strong><br>
-      Consumo Responsável<br><br>
-      Estimula a reutilização de livros e reduz desperdícios.
-    </td>
-  </tr>
+<a href="https://brasil.un.org/pt-br/sdgs/4">
+  <img src="img/ods4.png" alt="ODS 4" width="120">
+</a>
+
+### ODS 4  
+**Educação de Qualidade**
+
+Amplia o acesso à leitura e ao conhecimento.
+
+</td>
+
+<td align="center" width="250">
+
+<a href="https://brasil.un.org/pt-br/sdgs/11">
+  <img src="img/ods11.png" alt="ODS 11" width="120">
+</a>
+
+### ODS 11  
+**Cidades e Comunidades Sustentáveis**
+
+Incentiva colaboração e fortalecimento comunitário.
+
+</td>
+
+<td align="center" width="250">
+
+<a href="https://brasil.un.org/pt-br/sdgs/12">
+  <img src="img/ods12.png" alt="ODS 12" width="120">
+</a>
+
+### ODS 12  
+**Consumo Responsável**
+
+Estimula a reutilização de livros e reduz desperdícios.
+
+</td>
+
+</tr>
 </table>
 
 </div>
----
+```
+
 
 ## 👩‍💻 Integrantes do Grupo 6
 
