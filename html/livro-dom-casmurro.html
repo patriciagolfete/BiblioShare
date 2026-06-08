@@ -18,71 +18,104 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
   <link rel="stylesheet" href="../css/style.css">
-
 </head>
 
 <body>
 
-  <header>
-    <h1>
-      <i class="fa-solid fa-book"></i>
-      BiblioShare
-    </h1>
+  <header class="topo">
+    <a href="../index.html">
+      <img
+        src="../img/logo-biblioshare.png"
+        alt="Logo BiblioShare"
+        class="logo">
+    </a>
 
-    <p>Compartilhe conhecimento, compartilhe livros</p>
+    <form class="busca-menu">
+      <label for="pesquisa" class="label-escondida">
+        Pesquisar livros
+      </label>
+
+      <input
+        type="text"
+        id="pesquisa"
+        placeholder="Pesquisar livros">
+
+      <i class="fa-solid fa-magnifying-glass"></i>
+
+      <div
+        id="resultado-pesquisa"
+        class="resultado-pesquisa">
+      </div>
+    </form>
+
+    <nav class="menu">
+      <a href="../index.html">Início</a>
+      <a href="../livros.html">Livros</a>
+      <a href="../cadastro.html">Cadastro</a>
+      <a href="../login.html">Login</a>
+    </nav>
   </header>
 
-  <nav>
-    <a href="../index.html">Início</a>
-    <a href="../cadastro.html">Cadastro</a>
-    <a href="../login.html">Login</a>
-  </nav>
+  <main class="form-container">
 
-  <main class="container">
-
-    <section class="card">
-
-      <img
+    <img
       class="livro-img"
-        src="../img/dom-casmurro.jpg"
-        alt="Livro Dom Casmurro">
+      src="../img/dom-casmurro.jpg"
+      alt="Livro Dom Casmurro">
 
-      <h2>
-        <i class="fa-solid fa-book-open"></i>
-        Dom Casmurro
-      </h2>
+    <h1>
+      <i class="fa-solid fa-book-open"></i>
+      Dom Casmurro
+    </h1>
 
-      <p>
-        Autor: Machado de Assis
-      </p>
+    <p>
+      <strong>Autor:</strong>
+      Machado de Assis
+    </p>
 
-      <p>
-        Gênero: Romance / Literatura brasileira
-      </p>
+    <p>
+      <strong>Gênero:</strong>
+      Romance / Literatura Brasileira
+    </p>
 
-      <p>
-        Uma das obras mais importantes da literatura brasileira,
-        conhecida pela narrativa envolvente e pela famosa dúvida
-        sobre Capitu ter ou não traído Bentinho.
-      </p>
+    <p>
+      Uma das obras mais importantes da literatura brasileira,
+      conhecida pela narrativa envolvente e pela famosa dúvida
+      sobre Capitu ter ou não traído Bentinho.
+    </p>
 
-      <p>
-        Disponibilidade:
-        <strong>Empréstimo</strong>
-      </p>
+    <p>
+      <strong>Disponibilidade:</strong>
+      Empréstimo
+    </p>
 
-      <a href="#" class="btn">
-        Solicitar empréstimo
-      </a>
-
-    </section>
+    <a href="#" class="btn btn-livro">
+      Solicitar empréstimo
+    </a>
 
   </main>
 
   <footer>
     <p>Projeto acadêmico - BiblioShare © 2026</p>
+
+    <div class="curriculos">
+      <p>Currículos dos integrantes:</p>
+
+      <a
+        href="https://patriciagolfete.github.io/Curriculo-Vitae/"
+        target="_blank">
+        Patrícia Lacerda Golfete
+      </a>
+
+      <a
+        href="https://m4riavit0ria.github.io/Curriculo/"
+        target="_blank">
+        Maria Vitória Mendes Storel
+      </a>
+    </div>
   </footer>
 
+  <script src="../js/script.js"></script>
 </body>
 
 </html>

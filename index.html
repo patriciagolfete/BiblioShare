@@ -7,7 +7,6 @@
 
   <title>BiblioShare</title>
 
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
@@ -15,110 +14,130 @@
     href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Merriweather:wght@700&display=swap"
     rel="stylesheet">
 
-  
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-  
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-  <header>
-    <h1><i class="fa-solid fa-book"></i> BiblioShare</h1>
+  <header class="topo">
+  <a href="index.html">
+    <img
+      src="img/logo-biblioshare.png"
+      alt="Logo BiblioShare"
+      class="logo">
+  </a>
 
-    <p>
-      Compartilhe conhecimento, compartilhe livros
-    </p>
+  <form class="busca-menu">
+  <label for="pesquisa" class="label-escondida">Pesquisar livros</label>
 
-    <div class="ods-container">
+  <input
+    type="text"
+    id="pesquisa"
+    placeholder="Pesquisar livros">
 
-  <img
-    src="img/ods4.png"
-    alt="ODS 4 - Educação de Qualidade">
+  <i class="fa-solid fa-magnifying-glass"></i>
 
-  <img
-    src="img/ods11.png"
-    alt="ODS 11 - Cidades e Comunidades Sustentáveis">
+  <div id="resultado-pesquisa" class="resultado-pesquisa"></div>
+</form>
 
-  <img
-    src="img/ods12.png"
-    alt="ODS 12 - Consumo Responsável">
-
-</div>
-
-
-  </header>
-
-  <nav>
+  <nav class="menu">
     <a href="index.html">Início</a>
-    <a href="#livros">Livros</a>
+    <a href="livros.html">Livros</a>
     <a href="cadastro.html">Cadastro</a>
     <a href="login.html">Login</a>
   </nav>
+</header>
 
-  <main class="container" id="livros">
+  <section class="banner">
+    <button class="banner-btn" id="btn-voltar" type="button">
+      <i class="fa-solid fa-chevron-left"></i>
+    </button>
+
+    <div class="banner-conteudo">
+      <div class="banner-texto">
+        <span id="banner-tag">BiblioShare</span>
+
+        <h1 id="banner-titulo">
+          Compartilhe livros, espalhe conhecimento
+        </h1>
+
+        <p id="banner-descricao">
+          Uma plataforma para incentivar a troca e o empréstimo de livros,
+          promovendo educação, sustentabilidade e acesso à leitura.
+        </p>
+      </div>
+
+      <div class="banner-ods" id="banner-imagens">
+        <img
+          src="img/logo-biblioshare.png"
+          alt="Logo BiblioShare"
+          class="banner-logo">
+      </div>
+    </div>
+
+    <button class="banner-btn" id="btn-avancar" type="button">
+      <i class="fa-solid fa-chevron-right"></i>
+    </button>
+  </section>
+
+  <section class="titulo-secao">
+    <h2>Livros adicionados recentemente</h2>
+
+    <p>
+      Confira algumas opções disponíveis para troca ou empréstimo.
+    </p>
+  </section>
+
+  <main class="container-livros" id="livros">
 
     <section class="card">
-      <img
-        src="img/pequeno-principe.jpg"
-        alt="Livro O Pequeno Príncipe">
+  <img
+    src="img/pequeno-principe.jpg"
+    alt="Livro O Pequeno Príncipe">
 
-      <h2>
-        <i class="fa-solid fa-book-open"></i>
-        Livro: O Pequeno Príncipe
-      </h2>
+  <div class="card-conteudo">
+    <h2>
+      <i class="fa-solid fa-book-open"></i>
+      Livro: O Pequeno Príncipe
+    </h2>
 
-      <p>
-        Disponível para troca ou empréstimo.
-        Um clássico da literatura mundial sobre amizade,
-        imaginação e valores humanos.
-      </p>
+    <p>
+      Disponível para troca ou empréstimo.
+      Um clássico da literatura mundial sobre amizade,
+      imaginação e valores humanos.
+    </p>
 
-      <a href="html/livro-pequeno-principe.html" class="btn">
-  Ver mais
-</a>
-    </section>
+    <a href="html/livro-pequeno-principe.html" class="btn">
+      Ver mais
+    </a>
+  </div>
+</section>
 
-    <section class="card">
-      <img
-        src="img/dom-casmurro.jpg"
-        alt="Livro Dom Casmurro">
+<section class="card">
+  <img
+    src="img/dom-casmurro.jpg"
+    alt="Livro Dom Casmurro">
 
-      <h2>
-        <i class="fa-solid fa-book-open"></i>
-        Livro: Dom Casmurro
-      </h2>
+  <div class="card-conteudo">
+    <h2>
+      <i class="fa-solid fa-book-open"></i>
+      Livro: Dom Casmurro
+    </h2>
 
-      <p>
-        Disponível para empréstimo.
-        Obra clássica de Machado de Assis muito utilizada
-        em vestibulares e estudos escolares.
-      </p>
+    <p>
+      Disponível para empréstimo.
+      Obra clássica de Machado de Assis muito utilizada
+      em vestibulares e estudos escolares.
+    </p>
 
-      <a href="html/livro-dom-casmurro.html" class="btn">
-  Ver mais
-</a>
-    </section>
-
-    <section class="card">
-      <img
-        src="img/biblioteca.jpg"
-        alt="Biblioteca compartilhada">
-
-      <h2>
-        <i class="fa-solid fa-users"></i>
-        Espaço de Compartilhamento
-      </h2>
-
-      <p>
-        O BiblioShare incentiva o acesso à leitura e à educação,
-        promovendo o compartilhamento de livros entre pessoas.
-      </p>
-
-      <a href="https://github.com/patriciagolfete/BiblioShare" class="btn">Conhecer projeto</a>
-    </section>
+    <a href="html/livro-dom-casmurro.html" class="btn">
+      Ver mais
+    </a>
+  </div>
+</section>
 
   </main>
 
@@ -131,19 +150,18 @@
       <a
         href="https://patriciagolfete.github.io/Curriculo-Vitae/"
         target="_blank">
-
         Patrícia Lacerda Golfete
       </a>
 
       <a
         href="https://m4riavit0ria.github.io/Curriculo/"
         target="_blank">
-
         Maria Vitória Mendes Storel
       </a>
     </div>
   </footer>
 
+  <script src="js/script.js"></script>
 </body>
 
 </html>

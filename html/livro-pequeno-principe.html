@@ -18,75 +18,112 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
   <link rel="stylesheet" href="../css/style.css">
-
 </head>
 
 <body>
 
-  <header>
-    <h1>
-      <i class="fa-solid fa-book"></i>
-      BiblioShare
-    </h1>
+  <header class="topo">
+    <a href="../index.html">
+      <img
+        src="../img/logo-biblioshare.png"
+        alt="Logo BiblioShare"
+        class="logo">
+    </a>
 
-    <p>Compartilhe conhecimento, compartilhe livros</p>
+    <form class="busca-menu">
+      <label for="pesquisa" class="label-escondida">
+        Pesquisar livros
+      </label>
+
+      <input
+        type="text"
+        id="pesquisa"
+        placeholder="Pesquisar livros">
+
+      <i class="fa-solid fa-magnifying-glass"></i>
+
+      <div
+        id="resultado-pesquisa"
+        class="resultado-pesquisa">
+      </div>
+    </form>
+
+    <nav class="menu">
+      <a href="../index.html">Início</a>
+      <a href="../livros.html">Livros</a>
+      <a href="../cadastro.html">Cadastro</a>
+      <a href="../login.html">Login</a>
+    </nav>
   </header>
 
-  <nav>
-    <a href="../index.html">Início</a>
-    <a href="../cadastro.html">Cadastro</a>
-    <a href="../login.html">Login</a>
-  </nav>
+  <main class="form-container">
 
-  <main class="container">
-
-    <section class="card">
-
-      <img
+    <img
       class="livro-img"
-        src="../img/pequeno-principe.jpg"
-        alt="Livro O Pequeno Príncipe">
+      src="../img/pequeno-principe.jpg"
+      alt="Livro O Pequeno Príncipe">
 
-      <h2>
-        <i class="fa-solid fa-book-open"></i>
-        O Pequeno Príncipe
-      </h2>
+    <h1>
+      <i class="fa-solid fa-book-open"></i>
+      O Pequeno Príncipe
+    </h1>
 
-      <p>
-        Autor: Antoine de Saint-Exupéry
-      </p>
+    <p>
+      <strong>Autor:</strong>
+      Antoine de Saint-Exupéry
+    </p>
 
-      <p>
-        Gênero: Literatura infantil / Filosofia
-      </p>
+    <p>
+      <strong>Gênero:</strong>
+      Literatura Infantil / Filosofia
+    </p>
 
-      <p>
-        Um clássico da literatura mundial que aborda amizade,
-        amor, imaginação e os valores essenciais da vida através
-        da visão de uma criança.
-      </p>
+    <p>
+      Um clássico da literatura mundial que aborda amizade,
+      amor, imaginação e os valores essenciais da vida através
+      da visão de uma criança.
+    </p>
 
-      <p>
-        Disponibilidade:
-        <strong>Troca e empréstimo</strong>
-      </p>
+    <p>
+      <strong>Disponibilidade:</strong>
+      Troca e empréstimo
+    </p>
 
-      <a href="#" class="btn">
+    <div class="botoes-livro">
+
+      <a href="#" class="btn btn-livro">
         Solicitar troca
       </a>
 
-      <a href="#" class="btn">
+      <a href="#" class="btn btn-livro">
         Solicitar empréstimo
       </a>
 
-    </section>
+    </div>
 
   </main>
 
   <footer>
     <p>Projeto acadêmico - BiblioShare © 2026</p>
+
+    <div class="curriculos">
+      <p>Currículos dos integrantes:</p>
+
+      <a
+        href="https://patriciagolfete.github.io/Curriculo-Vitae/"
+        target="_blank">
+        Patrícia Lacerda Golfete
+      </a>
+
+      <a
+        href="https://m4riavit0ria.github.io/Curriculo/"
+        target="_blank">
+        Maria Vitória Mendes Storel
+      </a>
+    </div>
   </footer>
 
+  <script src="../js/script.js"></script>
 </body>
 
 </html>
