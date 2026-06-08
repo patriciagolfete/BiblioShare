@@ -3,8 +3,6 @@
   <img src="img/logo-biblioshare.png" alt="Logo BiblioShare" width="320">
 </p>
 
-<h1 align="center">BiblioShare</h1>
-
 <p align="center">
   Plataforma web para troca e empréstimo de livros 📚
 </p>
