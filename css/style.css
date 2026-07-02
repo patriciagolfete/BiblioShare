@@ -619,7 +619,7 @@ body.alto-contraste .busca-menu i {
   color: yellow !important;
 }
 
-@media (max-width: 1200) {
+@media (max-width: 1200px) {
 
   .topo {
     display: flex;
