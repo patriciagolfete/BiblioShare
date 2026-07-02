@@ -1,6 +1,8 @@
 const campoPesquisa = document.getElementById("pesquisa");
 const resultadoPesquisa = document.getElementById("resultado-pesquisa");
 
+let tamanhoFonte = 100;
+
 const livros = [
   {
     titulo: "O Pequeno Príncipe",
@@ -105,6 +107,16 @@ const banners = [
 }
 ];
 
+const banner = document.querySelector(".banner-conteudo");
+
+if (banner) {
+  if (tamanhoFonte >= 150) {
+    banner.classList.add("grande");
+  } else {
+    banner.classList.remove("grande");
+  }
+}
+
 let bannerAtual = 0;
 
 const bannerTag = document.getElementById("banner-tag");
@@ -166,8 +178,6 @@ botoesSolicitar.forEach(function (botao) {
 
 // ACESSIBILIDADE
 
-let tamanhoFonte = 100;
-
 const aumentarFonte =
 document.getElementById("aumentar-fonte");
 
@@ -180,20 +190,26 @@ document.getElementById("alto-contraste");
 if (aumentarFonte) {
   aumentarFonte.addEventListener("click", () => {
     tamanhoFonte += 10;
-    document.body.style.fontSize =
+
+    if (tamanhoFonte > 200) {
+      tamanhoFonte = 200;
+    }
+
+    document.documentElement.style.fontSize =
       tamanhoFonte + "%";
   });
 }
 
 if (diminuirFonte) {
   diminuirFonte.addEventListener("click", () => {
+
     tamanhoFonte -= 10;
 
     if (tamanhoFonte < 80) {
       tamanhoFonte = 80;
     }
 
-    document.body.style.fontSize =
+    document.documentElement.style.fontSize =
       tamanhoFonte + "%";
   });
 }
