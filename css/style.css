@@ -24,7 +24,10 @@ h3 {
 
   display: flex;
   align-items: center;
-  gap: 35px;
+  justify-content: space-between;
+  gap: 20px;
+
+  flex-wrap: wrap;
 
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
 
@@ -41,9 +44,10 @@ h3 {
 /* PESQUISA */
 
 .busca-menu {
-  width: 520px;
   position: relative;
-  flex-shrink: 0;
+  flex: 1;
+  min-width: 220px;
+  max-width: 520px;
 }
 
 .busca-menu input {
@@ -54,7 +58,7 @@ h3 {
   border-radius: 20px;
 
   font-family: 'Poppins', sans-serif;
-  font-size: 14px;
+  font-size: clamp(0.75rem, 0.875rem, 16px);
 }
 
 .busca-menu i {
@@ -63,6 +67,7 @@ h3 {
   top: 50%;
   transform: translateY(-50%);
   color: #2e7d32;
+  font-size: clamp(0.875rem, 1rem, 18px);
 }
 
 .label-escondida {
@@ -73,11 +78,8 @@ h3 {
 
 .menu {
   display: flex;
-  align-items: center;
-  gap: 40px;
-
-  margin-left: auto;
-  margin-right: 20px;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .menu a {
@@ -85,7 +87,7 @@ h3 {
   text-decoration: none;
 
   font-weight: 600;
-  font-size: 16px;
+  font-size: clamp(0.875rem, 1rem, 18px);
 
   transition: color 0.3s;
 }
@@ -156,18 +158,18 @@ h3 {
 
 .texto-pesquisa strong {
   color: #111;
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 
 .texto-pesquisa span {
   color: #666;
-  font-size: 12px;
+  font-size: 0.75rem;
 }
 
 .resultado-pesquisa p {
   padding: 14px;
   color: #777;
-  font-size: 13px;
+  font-size: 0.8125rem;
 }
 
 /* BANNER */
@@ -196,6 +198,19 @@ h3 {
   gap: 40px;
 }
 
+.banner-conteudo.grande {
+    flex-direction: column;
+    text-align: center;
+}
+
+.banner-conteudo.grande .banner-texto {
+    max-width: 100%;
+}
+
+.banner-conteudo.grande .banner-ods {
+    margin-top: 20px;
+}
+
 .banner-texto {
   max-width: 600px;
 }
@@ -209,13 +224,14 @@ h3 {
 
 .banner-texto h1 {
   color: #1b5e20;
-  font-size: 42px;
+  font-size: 2.625rem;
+  word-break: break-word;
   margin: 12px 0;
 }
 
 .banner-texto p {
   color: #555;
-  font-size: 17px;
+  font-size: 1.0625rem;
   line-height: 1.6;
 }
 
@@ -265,7 +281,7 @@ h3 {
   color: white;
 
   cursor: pointer;
-  font-size: 16px;
+  font-size: 1rem;
 
   transition: background 0.3s, transform 0.2s;
 }
@@ -288,7 +304,7 @@ h3 {
 
 .titulo-secao h2 {
   color: #2e7d32;
-  font-size: 30px;
+  font-size: 1.875rem;
   margin-bottom: 6px;
 }
 
@@ -312,6 +328,7 @@ h3 {
 
   display: flex;
   align-items: center;
+  flex-wrap:wrap;
 
   gap: 24px;
 
@@ -434,7 +451,7 @@ footer {
   text-align: center;
   margin-bottom: 20px;
   color: #2e7d32;
-  font-size: 28px;
+  font-size: 1.75rem;
 }
 
 .form-group {
@@ -453,7 +470,7 @@ footer {
   padding: 11px;
   border: 1px solid #ccc;
   border-radius: 8px;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -464,7 +481,7 @@ footer {
   border-radius: 8px;
   background-color: #2e7d32;
   color: white;
-  font-size: 16px;
+  font-size: 1rem;
   cursor: pointer;
   transition: background 0.3s;
 }
@@ -476,7 +493,7 @@ footer {
 .cadastro-link {
   text-align: center;
   margin-top: 18px;
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 
 .cadastro-link a {
@@ -519,7 +536,7 @@ footer {
 
 .acessibilidade {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
   gap: 10px;
 }
 
@@ -535,7 +552,7 @@ footer {
 
   cursor: pointer;
 
-  font-size: 18px;
+  font-size: clamp(0.875rem, 1.125rem, 18px);
 
   display: flex;
   align-items: center;
@@ -602,11 +619,14 @@ body.alto-contraste .busca-menu i {
   color: yellow !important;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1200) {
 
   .topo {
-    flex-direction: column;
-    gap: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
   }
 
   .logo {
@@ -620,8 +640,9 @@ body.alto-contraste .busca-menu i {
   }
 
   .busca-menu {
-    width: 100%;
-    max-width: 320px;
+    flex: 1;
+    max-width: 520px;
+    min-width: 250px;
   }
 
   .banner {
@@ -634,7 +655,7 @@ body.alto-contraste .busca-menu i {
   }
 
   .banner-texto h1 {
-    font-size: 30px;
+    font-size: 2.625rem;
   }
 
   .banner-ods img {
@@ -646,12 +667,13 @@ body.alto-contraste .busca-menu i {
   }
 
   .titulo-secao h2 {
-    font-size: 24px;
+    font-size: 1.5rem;
   }
 
   .container-livros .card {
     flex-direction: column;
     align-items: flex-start;
+    flex-wrap:wrap;
   }
 
   .container-livros .card img {
