@@ -176,6 +176,13 @@ Acesse pelo GitHub Pages:
 
 ---
 
+## 🎥 Vídeo de Apresentação
+
+Confira a apresentação em vídeo do projeto:
+**[Assista aqui](https://youtu.be/_8w9WS-z3V4)**
+
+---
+
 ## 📄 Licença
 
 Projeto acadêmico desenvolvido para fins educacionais, sem fins lucrativos.
